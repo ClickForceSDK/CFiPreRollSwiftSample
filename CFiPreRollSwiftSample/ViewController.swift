@@ -40,4 +40,7 @@ extension ViewController:MFPreRollDelegate{
         
         print("PreRoll廣告結束，可進行後續動作...");
     }
+    func onFailedToVast() {
+        print("PreRoll廣告失敗")
+    }
 }

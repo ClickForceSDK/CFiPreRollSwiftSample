@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,8 +17,8 @@
 		228393851F67C46A000C4692 /* CFiPreRollSwiftSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228393841F67C46A000C4692 /* CFiPreRollSwiftSampleUITests.swift */; };
 		228393931F67C4E6000C4692 /* iMFAD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228393921F67C4E6000C4692 /* iMFAD.framework */; };
 		228393941F67C4E6000C4692 /* iMFAD.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 228393921F67C4E6000C4692 /* iMFAD.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		228393971F67C51A000C4692 /* GoogleInteractiveMediaAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 228393961F67C51A000C4692 /* GoogleInteractiveMediaAds.framework */; };
-		228393981F67C51A000C4692 /* GoogleInteractiveMediaAds.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 228393961F67C51A000C4692 /* GoogleInteractiveMediaAds.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		48BB41C72A7C00FE00C3B2A2 /* GoogleInteractiveMediaAds.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48BB41C62A7C00FE00C3B2A2 /* GoogleInteractiveMediaAds.xcframework */; };
+		48BB41C82A7C010E00C3B2A2 /* GoogleInteractiveMediaAds.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 48BB41C62A7C00FE00C3B2A2 /* GoogleInteractiveMediaAds.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				228393981F67C51A000C4692 /* GoogleInteractiveMediaAds.framework in Embed Frameworks */,
+				48BB41C82A7C010E00C3B2A2 /* GoogleInteractiveMediaAds.xcframework in Embed Frameworks */,
 				228393941F67C4E6000C4692 /* iMFAD.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -69,8 +69,8 @@
 		228393841F67C46A000C4692 /* CFiPreRollSwiftSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CFiPreRollSwiftSampleUITests.swift; sourceTree = "<group>"; };
 		228393861F67C46A000C4692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		228393921F67C4E6000C4692 /* iMFAD.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = iMFAD.framework; sourceTree = "<group>"; };
-		228393961F67C51A000C4692 /* GoogleInteractiveMediaAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleInteractiveMediaAds.framework; sourceTree = "<group>"; };
 		228393991F67C579000C4692 /* CFiPreRollSwiftSample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CFiPreRollSwiftSample-Bridging-Header.h"; sourceTree = "<group>"; };
+		48BB41C62A7C00FE00C3B2A2 /* GoogleInteractiveMediaAds.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GoogleInteractiveMediaAds.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +78,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				228393971F67C51A000C4692 /* GoogleInteractiveMediaAds.framework in Frameworks */,
 				228393931F67C4E6000C4692 /* iMFAD.framework in Frameworks */,
+				48BB41C72A7C00FE00C3B2A2 /* GoogleInteractiveMediaAds.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +103,7 @@
 		228393551F67C46A000C4692 = {
 			isa = PBXGroup;
 			children = (
-				228393961F67C51A000C4692 /* GoogleInteractiveMediaAds.framework */,
+				48BB41C62A7C00FE00C3B2A2 /* GoogleInteractiveMediaAds.xcframework */,
 				228393921F67C4E6000C4692 /* iMFAD.framework */,
 				228393601F67C46A000C4692 /* CFiPreRollSwiftSample */,
 				228393781F67C46A000C4692 /* CFiPreRollSwiftSampleTests */,
@@ -224,8 +224,6 @@
 				TargetAttributes = {
 					2283935D1F67C46A000C4692 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 8Q3LY5VL5Q;
-						ProvisioningStyle = Automatic;
 					};
 					228393741F67C46A000C4692 = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -244,6 +242,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -395,6 +394,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -437,7 +437,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -447,6 +449,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8Q3LY5VL5Q;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -454,15 +458,19 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = CFiPreRollSwiftSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cf.CFiPreRollSwiftSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/CFiPreRollSwiftSample/CFiPreRollSwiftSample-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -470,6 +478,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8Q3LY5VL5Q;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -477,15 +487,19 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = CFiPreRollSwiftSample/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cf.CFiPreRollSwiftSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/CFiPreRollSwiftSample/CFiPreRollSwiftSample-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -495,10 +509,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CFiPreRollSwiftSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cf.CFiPreRollSwiftSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CFiPreRollSwiftSample.app/CFiPreRollSwiftSample";
 			};
 			name = Debug;
@@ -509,10 +527,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = CFiPreRollSwiftSampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cf.CFiPreRollSwiftSampleTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CFiPreRollSwiftSample.app/CFiPreRollSwiftSample";
 			};
 			name = Release;
@@ -522,10 +544,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CFiPreRollSwiftSampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cf.CFiPreRollSwiftSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = CFiPreRollSwiftSample;
 			};
 			name = Debug;
@@ -535,10 +561,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = CFiPreRollSwiftSampleUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cf.CFiPreRollSwiftSampleUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = CFiPreRollSwiftSample;
 			};
 			name = Release;
